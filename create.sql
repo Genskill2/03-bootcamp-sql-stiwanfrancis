@@ -16,8 +16,8 @@ CREATE TABLE subjects(
   );
   
 CREATE TABLE books_subjects(
-  book INT REFERENCE books(id),
-  subject INT REFERENCE subjects(id)
+  book INT REFERENCES books(id),
+  subject INT REFERENCES subjects(id)
   );
   
   
